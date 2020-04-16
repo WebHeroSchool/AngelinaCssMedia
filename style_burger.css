@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    background: #008aff;
+}
+.nav__a {
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+@media (max-width: 414px) {
+    .nav__a {
+        display: none;
+    }
+    .nav::before {
+        color: #fff;
+        padding: 15px 10px;
+        content: '\2630';
+    }
+}
